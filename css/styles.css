@@ -165,7 +165,7 @@ img {
   margin-left: auto;
   text-align: center;
   background-color: #c4c4c4;
-  background-image: url('../images/img-hero.jpg');
+  background-image: url('../images/bg-hero.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -303,6 +303,7 @@ img {
 
 .socials-list {
   display: flex;
+  text-align: center;
 }
 
 /* footer */
