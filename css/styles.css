@@ -12,6 +12,7 @@
   --logo-font: 'Raleway', sans-serif;
   --border-color: #ececec;
   --border-card-content: #eeeeee;
+  --color-social-icons: #afb1b8;
 }
 html {
   box-sizing: border-box;
@@ -140,15 +141,15 @@ img {
   letter-spacing: 0.02em;
 }
 
-/* .contacts-link {
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts-link {
   display: flex;
   align-items: center;
 }
-
-.contacts-icon {
-  width: 16px;
-  height: 12px;
-} */
 
 /* hero */
 .hero,
@@ -164,8 +165,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  background-color: #c4c4c4;
-  background-image: url('../images/bg-hero.jpg');
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bg-hero.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -201,6 +201,26 @@ img {
 }
 
 /* features */
+
+/* .feature-icons-list {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.thumb {
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--secondary-bg-color);
+}
+
+.feature-icons-svg {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+  height: 70px;
+}
 
 .feature-list {
   display: flex;
@@ -251,6 +271,44 @@ img {
 }
 .work > .item:not(:last-child) {
   margin-right: 30px;
+}
+
+.social-icons {
+  display: inline-flex;
+}
+
+.social-icons-item {
+  padding-bottom: 30px;
+}
+
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--premari-white-color);
+}
+
+.social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-social-icons);
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
+  fill: var(--premari-white-color);
 }
 
 /* team */
@@ -304,6 +362,10 @@ img {
 .socials-list {
   display: flex;
   text-align: center;
+}
+
+.social-icons-svg {
+  display: flex;
 }
 
 /* footer */
@@ -419,8 +481,4 @@ img {
   color: var(--primari-text-color);
   font-size: 16px;
   line-height: 1.87;
-}
-
-.project-item * {
-  /* outline: 1px solid tomato; */
 }
