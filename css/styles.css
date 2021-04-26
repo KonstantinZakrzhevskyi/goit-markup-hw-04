@@ -375,16 +375,6 @@ img {
   margin-right: 30px;
 }
 
-/* .client-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid var(--color-icons);
-  border-radius: 4px;
-} */
-
 .clients-link-svg {
   display: flex;
   align-items: center;
@@ -449,12 +439,6 @@ img {
 .footer-link:not(:last-child) {
   margin-bottom: 9px;
 }
-
-/* footer-social-icons */
-/* 
-.footer-social-icons {
-  display: flex;
-} */
 
 .footer-social-icons {
   margin-left: 70px;
